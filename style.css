@@ -58,3 +58,12 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.footer-container {
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg-container);
+}
