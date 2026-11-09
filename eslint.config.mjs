@@ -8,7 +8,7 @@ export default defineConfig([
   {
     files: ['src/**/*.ts'],
     plugins: { js },
-    extends: ['js/recommended'],
+    extends: ['js/recommended', tseslint.configs.recommended],
     languageOptions: { globals: globals.browser },
     rules: {
       'no-var': 'error',
@@ -16,6 +16,5 @@ export default defineConfig([
       'no-console': 'warn',
     },
   },
-  tseslint.configs.recommended,
   eslintConfigPrettier,
 ]);

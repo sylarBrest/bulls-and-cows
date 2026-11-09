@@ -13,12 +13,12 @@
   box-sizing: border-box;
 }
 
-body {
+#app {
   display: flex;
   flex-direction: column;
   min-inline-size: 320px;
   min-block-size: 100dvh;
-  background: var(--bg-main);
+  background-color: var(--bg-main);
   color: var(--text-main);
   font:
     normal normal 16px/24px 'Poppins',
@@ -51,12 +51,48 @@ body {
 
 .button {
   font: inherit;
-  color: inherit;
+  color: var(--color-white);
   background-color: var(--btn-bg-color);
   border: none;
-  padding: 5px;
+  padding: 7px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.section {
+  padding: 10px;
+}
+
+.settings-container {
+  position: relative;
+  border: 2px solid var(--bg-overlay);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.section-title {
+  position: absolute;
+  top: -12px;
+  font-size: 16px;
+  padding-inline: 5px;
+  background-color: var(--bg-main);
+}
+
+.select {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 5px;
+  font: inherit;
+}
+
+.start-button {
+  margin-inline-start: auto;
 }
 
 .footer-container {
