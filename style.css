@@ -1,5 +1,60 @@
+:root {
+  --bg-container: #007d9c;
+  --btn-bg-color: #242ebb;
+  --bg-main: #d8e4fa;
+  --bg-overlay: #2c2929bd;
+  --text-main: #464646;
+  --color-white: #ffffff;
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 320px;
+  min-block-size: 100dvh;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font:
+    normal normal 16px/24px 'Poppins',
+    'Roboto',
+    Verdana,
+    sans-serif;
+}
+
+.container {
+  inline-size: calc(100% - 40px);
+  max-inline-size: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--bg-container);
+  color: var(--color-white);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  font: inherit;
+  color: inherit;
+  background-color: var(--btn-bg-color);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }

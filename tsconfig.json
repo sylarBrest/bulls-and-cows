@@ -16,7 +16,7 @@
     "isolatedModules": true,
     "sourceMap": true,
     "rootDir": "src",
-    "outDir": "."
+    "outDir": "js"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
