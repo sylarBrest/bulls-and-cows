@@ -1,0 +1,152 @@
+:root {
+  --bg-container: #007d9c;
+  --btn-bg-color: #242ebb;
+  --bg-main: #d8e4fa;
+  --bg-overlay: #2c2929bd;
+  --text-main: #464646;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 320px;
+  min-block-size: 100dvh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font:
+    normal normal 16px/24px 'Poppins',
+    'Roboto',
+    Verdana,
+    sans-serif;
+}
+
+.container {
+  inline-size: calc(100% - 40px);
+  max-inline-size: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--bg-container);
+  color: var(--color-white);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  font: inherit;
+  color: var(--color-white);
+  background-color: var(--btn-bg-color);
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 10px;
+}
+
+.settings-container {
+  position: relative;
+  border: 2px solid var(--bg-overlay);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.game-container {
+  position: relative;
+  padding: 20px;
+  border: 2px solid var(--bg-overlay);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.history-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-container {
+  position: relative;
+  padding: 20px;
+  flex-grow: 1;
+  border: 2px solid var(--bg-overlay);
+}
+
+.game-form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.game-message {
+  min-height: 44px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.section-title {
+  position: absolute;
+  top: -12px;
+  font-size: 16px;
+  padding-inline: 5px;
+  background-color: var(--bg-main);
+}
+
+.select,
+.input {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 5px;
+  font: inherit;
+}
+
+.game-input {
+  border: 1px solid var(--bg-overlay);
+  padding-inline-start: 15px;
+}
+
+.start-button,
+.check-button {
+  margin-inline-start: auto;
+}
+
+.game-history {
+  list-style: none;
+}
+
+.footer-container {
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg-container);
+}

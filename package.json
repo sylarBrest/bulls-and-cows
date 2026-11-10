@@ -1,0 +1,48 @@
+{
+  "name": "Bulls and Cows",
+  "version": "1.0.0",
+  "description": "Bulls and Cows game",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint",
+      "prettier --check"
+    ],
+    "*.{html,css}": [
+      "prettier --check"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylarBrest/bulls-and-cows.git"
+  },
+  "keywords": [],
+  "author": "Aliaksandr Astrouski",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sylarBrest/bulls-and-cows/issues"
+  },
+  "homepage": "https://github.com/sylarBrest/bulls-and-cows#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1"
+  }
+}
